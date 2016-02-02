@@ -67,6 +67,7 @@ final class CameraConfigurationManager {
    * We detect the preview format here so that buildLuminanceSource() can build an appropriate
    * LuminanceSource subclass. In the future we may want to force YUV420SP as it's the smallest,
    * and the planar Y can be used for barcode scanning without a copy in some cases.
+   * 帆帆帆帆帆帆帆帆帆帆帆帆帆帆
    */
   void setDesiredCameraParameters(Camera camera) {
     Camera.Parameters parameters = camera.getParameters();
@@ -78,7 +79,7 @@ final class CameraConfigurationManager {
     //modify here
     
 //    camera.setDisplayOrientation(90);
-    //����2.1
+    //����2.1
     setDisplayOrientation(camera, 90);
     camera.setParameters(parameters);
   }
